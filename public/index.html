@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - Socket.IO</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="/live.js"></script>
+</head>
+
+<body>
+    <!-- CONTAINER LOGIN PAGE -->
+    <div class="container-fluid" id="loginPage">
+        <br>
+        <div>
+            <div class="row">
+                <div class="col-12">
+                    <label id="labelInputUsername">What's your username?</label>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6">
+                    <small id="errorUsername"></small>
+                    <input type="text" class="form-control" id="inputUsername"/>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <button type="button" class="btn btn-primary" id="sendUsername">Enter !</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CONTAINER LOGIN PAGE END -->
+
+    <!-- CONTAINER CHAT PAGE USER -->
+    <div class="container-fluid"  id="chatPage" style="display: none;">
+        <br>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-3" id="divUsers">
+                <strong id="labelStrongChat">Users Connected</strong>
+                <hr>
+                <ul id="listUsersConnected">
+                </ul>
+            </div>
+            <div class="col-7" id="divMessages">
+                <strong id="labelStrongChat">List of Messages</strong>
+                <hr>
+                <ul id="listMessages">
+                </ul>
+                <div class="" id="userTypingMessage"></div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="inputMessage" placeholder="Write ur message">
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-outline-secondary" id="sendMessage">Send Message</button>
+                    </div>
+                </div>
+                <small id="errorMessage"></small>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+    <!-- CONTAINER CHAT PAGE MESSAGES END -->
+
+    <script src="/socket.io/socket.io.js" charset="utf-8"></script>
+    <script src="script.js" charset="utf-8"></script>
+</body>
+
+</html>

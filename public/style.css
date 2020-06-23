@@ -1,0 +1,59 @@
+*{
+    list-style: none;
+}
+
+#labelInputUsername {
+    width: 100%;
+    text-align: center;
+}
+
+#errorUsername {
+    color: red;
+}
+
+#errorMessage {
+    color: red;
+}
+
+#userTypingMessage {
+    color: blue;
+}
+
+#inputUsername {
+    width: 100%;
+    align-items: center;
+}
+
+#sendUsername {
+    width: 100%;
+    align-items: center;
+}
+/*********************************/
+
+#divUsers {
+    align-items: center;
+    width: 100%;
+    height: auto;
+    border-right: 1px solid white;
+}
+
+#divMessages {
+    width: 100%;
+    height: auto;
+    margin-left: 50px;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+#nameUser {
+    font-size: 1.3rem;
+}
+
+#labelStrongChat {
+    text-align: center;
+    align-items: center;
+}
+
+#greetMessage {
+    text-align: center;
+}
